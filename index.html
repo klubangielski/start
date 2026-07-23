@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klub Angielski | Native Speaker | Zabawa i Gry po angielsku</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styleSheet.css">
+</head>
+<body class="page-body">
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="site-logo" style="overflow: visible;">Klub Angielski</a>
+            <nav class="nav-menu">
+                <a href="#lessons" class="nav-link">Aktywności</a>
+                <a href="#pricing" class="nav-link">Cennik</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="parallax-section">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content">
+            <h1 class="hero-title" id="hero">
+                Witamy w Klubie Angielskim<span class="text-highlight"></span>
+            </h1>
+            <p class="hero-subtitle" id="sub-hero">
+                Czy jesteś gotowy podnieść poziom swojego angielskiego?
+            </p>
+
+            <div class="toggle-container">
+                <button onclick="switchView('teen')" id="btn-teen" class="btn-toggle btn-toggle-active">
+                    <i class="fa-solid fa-graduation-cap mr-2"></i>Dla nastolatki (11-17)
+                </button>
+                <button onclick="switchView('adult')" id="btn-adult" class="btn-toggle btn-toggle-inactive">
+                    <i class="fa-solid fa-briefcase mr-2"></i>Dla dorosłych (18+)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <main id="lessons" class="main-content">
+
+        <!-- KIDS SECTION -->
+
+        <div id="teen-section" class="card-grid">
+            <div class="card-item">
+                <div>
+                    <span class="card-tag">Foundation</span>
+                    <h3 class="card-title">Exam Prep & Mastery</h3>
+                    <p class="card-desc">Ace your school assessments and build strong conceptual pillars with structured, stress-free mentorship.</p>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-regular fa-clock mr-1"></i> 60 Min sessions</span>
+                    <span><i class="fa-regular fa-calendar mr-1"></i> 2x a week</span>
+                </div>
+            </div>
+
+            <div class="card-image" style="background-image: url('images/hand-drawn-english-book-background.png');">
+                
+                <!-- <div>
+                    <span class="card-tag">Foundation</span>
+                    <h3 class="card-title">Exam Prep & Mastery</h3>
+                    <p class="card-desc">Ace your school assessments and build strong conceptual pillars with structured, stress-free mentorship.</p>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-regular fa-clock mr-1"></i> 60 Min sessions</span>
+                    <span><i class="fa-regular fa-calendar mr-1"></i> 2x a week</span>
+                </div> -->
+            </div>
+            
+            <div class="card-item">
+                <div>
+                    <span class="card-tag">Creative</span>
+                    <h3 class="card-title">Logic & Creative Thinking</h3>
+                    <p class="card-desc">Learn to solve real-world problems through fun challenges, conceptual coding practices, and analytical puzzles.</p>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-regular fa-clock mr-1"></i> 90 Min sessions</span>
+                    <span><i class="fa-regular fa-calendar mr-1"></i> 1x a week</span>
+                </div>
+            </div>
+
+            <div class="card-image" style="background-image: url('images/map-with-die.jpg');"></div>
+
+            <div class="card-item">
+                <div>
+                    <span class="card-tag">Advanced</span>
+                    <h3 class="card-title">Olympiad Training</h3>
+                    <p class="card-desc">For advanced students aiming to compete nationally. Deep dives into complex competitive frameworks.</p>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-regular fa-clock mr-1"></i> 120 Min sessions</span>
+                    <span><i class="fa-regular fa-calendar mr-1"></i> Flexible</span>
+                </div>
+            </div>
+
+            <div class="card-image" style="background-image: url('images/letters-in-book.jpg');"></div>
+        </div>
+
+        <!-- ADULT SECTION -->
+
+        <div id="adult-section" class="card-grid hidden">
+            <div class="card-item">
+                <div>
+                    <span class="card-tag">Career</span>
+                    <h3 class="card-title">Professional Pivoting</h3>
+                    <p class="card-desc">Accelerated learning pathways to acquire high-impact skills required to change fields safely and cleanly.</p>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-regular fa-clock mr-1"></i> 60 Min sessions</span>
+                    <span><i class="fa-regular fa-calendar mr-1"></i> Evenings Only</span>
+                </div>
+            </div>
+            
+            <div class="card-image" style="background-image: url('images/ivan-shilov-ucUB9wxkPgY-unsplash.jpg');"></div>
+
+            <div class="card-item">
+                <div>
+                    <span class="card-tag">Efficiency</span>
+                    <h3 class="card-title">Executive Skill-Up</h3>
+                    <p class="card-desc">Targeted micro-lessons on productivity tools, industry frameworks, and clear communications for corporate settings.</p>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-regular fa-clock mr-1"></i> 45 Min sessions</span>
+                    <span><i class="fa-regular fa-calendar mr-1"></i> Custom Slots</span>
+                </div>
+            </div>
+
+            <div class="card-image" style="background-image: url('images/coffee-shop.jpg');"></div>
+            
+            <div class="card-item">
+                <div>
+                    <span class="card-tag">Casual</span>
+                    <h3 class="card-title">Lifelong Hobbyist</h3>
+                    <p class="card-desc">No pressure, no strict timelines. Revisit fundamental interests or discover new passions on a stress-free track.</p>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-regular fa-clock mr-1"></i> 90 Min sessions</span>
+                    <span><i class="fa-regular fa-calendar mr-1"></i> Weekends</span>
+                </div>
+            </div>
+
+            <div class="card-image" style="background-image: url('images/word-game.jpg');"></div>
+        </div>
+    </main>
+
+    <section id="pricing" class="pricing-section">
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <h2 class="pricing-title">Simple, Transparent Pricing</h2>
+                <p class="pricing-subtitle">Pick the tier that fits your pacing schedule.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div>
+                        <h4 class="price-card-title">Pay-As-You-Go</h4>
+                        <p class="price-card-sub">Perfect for occasional check-ins</p>
+                        <div class="price-amount-row">
+                            <span class="price-amount">$45</span>
+                            <span class="price-unit">/ lesson</span>
+                        </div>
+                        <ul class="price-features">
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Full access to all resources</li>
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Direct digital notes copy</li>
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> 24-hour rescheduling freedom</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn-price btn-price-dark">Get Started</a>
+                </div>
+
+                <div class="price-card">
+                    <!-- <span class="price-badge">Most Popular</span> -->
+                    <div>
+                        <h4 class="price-card-title">Standard Bundle</h4>
+                        <p class="price-card-sub">Best choice for consistency</p>
+                        <div class="price-amount-row">
+                            <span class="price-amount">$160</span>
+                            <span class="price-unit">/ 4 lessons</span>
+                        </div>
+                        <p class="price-note">Breaks down to just $40 per lesson!</p>
+                        <ul class="price-features">
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Everything in standard tier</li>
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Personal learning tracking sheet</li>
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Priority weekend booking options</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn-price btn-price">Select Bundle</a>
+                </div>
+
+                <div class="price-card">
+                    <div>
+                        <h4 class="price-card-title">Semester Pass</h4>
+                        <p class="price-card-sub">Complete curriculum coverage</p>
+                        <div class="price-amount-row">
+                            <span class="price-amount">$350</span>
+                            <span class="price-unit">/ 10 lessons</span>
+                        </div>
+                        <p class="price-note">Breaks down to just $35 per lesson!</p>
+                        <ul class="price-features">
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Premium dedicated 1-on-1 focus</li>
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Mid-term milestones analysis</li>
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Permanent Discord peer support</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn-price btn-price-dark">Select Pass</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="site-footer">
+        <div class="footer-container">
+            <h2 class="footer-title">Ready to kickstart your program?</h2>
+            <p class="footer-subtitle">Reach out via any preferred path. We respond back within 12 hours.</p>
+
+            <div class="footer-grid">
+                <a href="tel:+1234567890" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <span class="contact-label">Call Us</span>
+                        <span class="contact-value">+1 (234) 567-890</span>
+                    </div>
+                </a>
+                <a href="mailto:hello@academy.com" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <span class="contact-label">Email Us</span>
+                        <span class="contact-value">hello@academy.com</span>
+                    </div>
+                </a>
+                <a href="https://facebook.com/yourpage" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div>
+                        <span class="contact-label">Follow Us</span>
+                        <span class="contact-value">facebook.com/academy</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                &copy; 2026 Academy Inc. All rights reserved. Transparent terms apply.
+                
+            </div>
+        </div>
+        
+    </footer>
+
+    <script>
+        function switchView(type) {
+            document.body.setAttribute('data-theme', type);
+            const teenSection = document.getElementById('teen-section');
+            const adultSection = document.getElementById('adult-section');
+            const btnTeen = document.getElementById('btn-teen');
+            const btnAdult = document.getElementById('btn-adult');
+
+            if (type === 'teen') {
+                teenSection.classList.remove('hidden');
+                adultSection.classList.add('hidden');
+                
+                btnTeen.className = "btn-toggle btn-toggle-active";
+                btnAdult.className = "btn-toggle btn-toggle-inactive";
+            } else {
+                adultSection.classList.remove('hidden');
+                teenSection.classList.add('hidden');
+                
+                btnAdult.className = "btn-toggle btn-toggle-active";
+                btnTeen.className = "btn-toggle btn-toggle-inactive";
+            }
+        }
+
+        var heroArray = [
+            "Mów pewnie", 
+            "Porozmawiaj z native speakerem", 
+            "Zrelaksowana atmosfera", 
+            "Ucz się, ćwicz, stosuj, baw się!", 
+            "Witamy w Klubie Angielskim"
+        ];
+        var heroSubArray = [
+            "Każda przygoda zaczyna się od rozmowy", 
+            "Posiadam certyfikat uprawniający do nauczania języka angielskiego jako języka obcego", 
+            "Wykonuj aktywności i graj w gry po angielsku",  
+            "", 
+            "Czy jesteś gotowy podnieść poziom swojego angielskiego?"
+        ]
+        var i = 0;
+        var j = 0
+        const change = setInterval(() => {
+            var hero = $('#hero');
+            var subHero = $('#sub-hero');
+            hero.clearQueue();
+            subHero.clearQueue();
+            hero.fadeOut('fast');
+            subHero.fadeOut('fast');
+            hero.queue(function() {
+                hero.text(heroArray[i]);
+                hero.fadeIn('slow');
+                hero.dequeue();
+            });
+            subHero.queue(function() {
+                subHero.text(heroSubArray[j]);
+                subHero.fadeIn('slow');
+                subHero.dequeue();
+            })
+            i++;
+            j++;
+            if(i >= heroArray.length) {i = 0};
+            if(j >= heroSubArray.length) {j = 0};
+        }, 6000);
+        
+    </script>
+</body>
+</html>
+<a href="https://www.vecteezy.com/free-png/silhouette">Silhouette PNGs by Vecteezy</a>
+<a href="https://www.vecteezy.com/free-png/paint-smudge">Paint Smudge PNGs by Vecteezy</a>
+<a href="https://www.vecteezy.com/free-photos/mountains">Mountains Stock photos by Vecteezy</a>
+Photo by <a href="https://unsplash.com/@mycreate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Shilov</a> on <a href="https://unsplash.com/photos/everyday-english-book-ucUB9wxkPgY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+<a href="https://www.magnific.com/free-photo/people-hangout-together-coffee-shop_2861207.htm">Coffee shop by Magnific</a>
