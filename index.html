@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styleSheet.css">
 </head>
+
 <body class="page-body">
 
     <header class="site-header">
@@ -19,7 +21,7 @@
                 <div class="site-logo-cursive"><a href="#">~ z Mattem ~</a></div>
             </div>
             <nav class="nav-menu">
-                <a href="#about" class="nav-link">O&nbsp;nas</a>
+                <a href="#about" class="nav-link">O&nbsp;mnie</a>
                 <a href="#lessons" class="nav-link">Aktywności</a>
                 <a href="#pricing" class="nav-link">Cennik</a>
                 <a href="#contact" class="nav-link">Kontakt</a>
@@ -48,58 +50,55 @@
         </div>
     </section>
 
+    <section id="about" class="main-content">
+        <div class="card-grid">
+
+            <div class="card-item">
+                <h2>O mnie!</h2>
+                <p class="card-desc">
+                    Something about me.
+                </p>
+            </div>
+
+            <div class="card-image" style="background-image: url('images/card-icons.png');"></div>
+
+        </div>
+
+
+    </section>
+
     <section id="lessons" class="main-content">
+
+        <div class="pricing-header">
+            <h2 class="pricing-title">Aktywności</h2>
+            <!-- <p class="pricing-subtitle">Jak chcesz się uczyć?</p> -->
+        </div>
 
         <!-- KIDS SECTION -->
 
         <div id="teen-section" class="card-grid">
             <div class="card-item">
                 <div>
-                    <span class="card-tag">Indywydualne</span>
-                    <h3 class="card-title">Ucz się, skup się, opanuj język<!-- Learn, Focus, Master --></h3>
-                    <p class="card-desc">
-                        Indywidualne sesje, podczas których możesz rozwijać swoje zainteresowania, powtarzać materiał przed egzaminem i rozwijać praktyczne umiejętności mówienia i słuchania.
-                        <!-- One-to-one focussed sessions, where you can explore your interests, revise for an exam, and build your practical speaking and listening skills. -->
-                        <ul class="card-list">
-                            <li>Ćwicz pewność siebie</li>
-                            <li>Praktyka i korekta</li>
-                            <li>Wsparcie ukierunkowane na konkretny zakres tematyczny</li>
-                            <li>Przygotowanie do egzaminów</li>
-                            <!-- <li>Build confidence</li>
-                            <li>Practice and correction</li>
-                            <li>Targeted subject support</li>
-                            <li>Explore special interests</li> -->
-                        </ul>
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <span><i class="fa-regular fa-clock mr-1"></i> 45-min sesje</span>
-                    <span><i class="fa-regular fa-calendar mr-1"></i>Elastyczne godziny</span>
-                </div>
-            </div>
-
-            <div class="card-image" style="background-image: url('images/card-icons.png');"></div>
-            
-            <div class="card-item">
-                <div>
                     <span class="card-tag">Grupy</span>
                     <h3 class="card-title">Co robimy?</h3>
                     <p class="card-desc">
-                        Klub zajęć pozalekcyjnych prowadzony wyłącznie w języku angielskim z native speakerem. Skoncentrujemy się na sytuacjach praktycznych, gdzie będzie okazja do treningu i poszerzania angielskiego słownictwa z danego zakresu. Możesz się spodziewać ciekawych tematów zajęć:
+                        Klub zajęć pozalekcyjnych prowadzony wyłącznie w języku angielskim z native speakerem.
+                        Skoncentrujemy się na sytuacjach praktycznych, gdzie będzie okazja do treningu i poszerzania
+                        angielskiego słownictwa z danego zakresu. Możesz się spodziewać ciekawych tematów zajęć:
                         <!-- After school activity club run only in English with a 'Native Speaker'. You can expect to: -->
-                        <ul class="card-list">
-                            <li>Badanie zagadkowych tajemnic</li>
-                            <li>Odkrywanie egzotycznych kultur</li>
-                            <li>Rozwiązywanie pomysłowych łamigłówek</li>
-                            <li>Granie w gry kooperacyjne</li>
-                            <li>Opowiadanie fascynujących historii</li>
-                            <li>Odgrywanie przydatnych scenek z życia codziennego </li>
-                            <!-- <li>Investigate perplexing mysteries</li>
+                    <ul class="card-list">
+                        <li>Badanie zagadkowych tajemnic</li>
+                        <li>Odkrywanie egzotycznych kultur</li>
+                        <li>Rozwiązywanie pomysłowych łamigłówek</li>
+                        <li>Granie w gry kooperacyjne</li>
+                        <li>Opowiadanie fascynujących historii</li>
+                        <li>Odgrywanie przydatnych scenek z życia codziennego </li>
+                        <!-- <li>Investigate perplexing mysteries</li>
                             <li>Explore exotic cultures</li>
                             <li>Solve ingenious puzzles</li>
                             <li>Play cooperative games</li>
                             <li>Tell captivating stories</li> -->
-                        </ul>
+                    </ul>
                     </p>
                 </div>
                 <div class="card-footer">
@@ -108,6 +107,34 @@
                 </div>
             </div>
 
+            <div class="card-image" style="background-image: url('images/card-icons.png');"></div>
+            <div class="card-item">
+                <div>
+                    <span class="card-tag">Indywydualne</span>
+                    <h3 class="card-title">Ucz się, skup się, opanuj język<!-- Learn, Focus, Master --></h3>
+                    <p class="card-desc">
+                        Indywidualne sesje, podczas których możesz rozwijać swoje zainteresowania, powtarzać materiał
+                        przed egzaminem i rozwijać praktyczne umiejętności mówienia i słuchania.
+                        <!-- One-to-one focussed sessions, where you can explore your interests, revise for an exam, and build your practical speaking and listening skills. -->
+                    <ul class="card-list">
+                        <li>Ćwicz pewność siebie</li>
+                        <li>Praktyka i korekta</li>
+                        <li>Wsparcie ukierunkowane na konkretny zakres tematyczny</li>
+                        <li>Przygotowanie do egzaminów</li>
+                        <!-- <li>Build confidence</li>
+                            <li>Practice and correction</li>
+                            <li>Targeted subject support</li>
+                            <li>Explore special interests</li> -->
+                    </ul>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-regular fa-clock mr-1"></i> 45-min sesje</span>
+                    <span><i class="fa-regular fa-calendar mr-1"></i>Elastyczne godziny</span>
+                </div>
+            </div>
+
+
             <div class="card-image" style="background-image: url('images/card-tiles.jpg');"></div>
 
             <div class="card-item">
@@ -115,20 +142,23 @@
                     <span class="card-tag">Seria Tematyczna</span>
                     <h3 class="card-title">Interaktywne opowiadanie historii<!-- Interactive Storytellin --></h3>
                     <p class="card-desc">
-                        Wciągająca seria 8 sesji w języku angielskim, połączonych wspólną historią, w której TY decydujesz, co się wydarzy. Gra fabularna (RPG) zaprojektowana specjalnie po to, by zachęcać do mówienia i słuchania, budowania i zapamiętywania słownictwa, kreatywnego myślenia, stosowania wiedzy i wspólnej pracy nad komunikacją.
+                        Wciągająca seria 8 sesji w języku angielskim, połączonych wspólną historią, w której TY
+                        decydujesz, co się wydarzy. Gra fabularna (RPG) zaprojektowana specjalnie po to, by zachęcać do
+                        mówienia i słuchania, budowania i zapamiętywania słownictwa, kreatywnego myślenia, stosowania
+                        wiedzy i wspólnej pracy nad komunikacją.
                         <!-- An immersive English series of 8 guided sessions linked by a common story, where YOU decide what will happen. A Role-Play Game (RPG) designed specifically to encourage speaking and listening, to build and recall vocabulary, to think creatively, apply knowledge and work on communication together. -->
-                        <ul class="card-list">
-                            <li>Przygodowe scenariusze i ekscytujące historie</li>
-                            <li>Współpracujcie i komunikujcie swoje pomysły</li>
-                            <li>Buduje słownictwo tydzień po tygodniu</li>
-                            <li>Podejmuj decyzje i kieruj swoim zespołem</li>
-                            <li>Zdobywaj odznaki i prowadź dziennik sesji</li>
-                            <!-- <li>Adventurous scenarios and thrilling stories</li>
+                    <ul class="card-list">
+                        <li>Przygodowe scenariusze i ekscytujące historie</li>
+                        <li>Współpracujcie i komunikujcie swoje pomysły</li>
+                        <li>Budujcie słownictwo tydzień po tygodniu</li>
+                        <li>Podejmujcie decyzje i kierujcie swoim zespołem</li>
+                        <li>Zdobywajcie odznaki i prowadźcie dziennik sesji</li>
+                        <!-- <li>Adventurous scenarios and thrilling stories</li>
                             <li>Work together and communicate your ideas</li>
                             <li>Builds vocabulary week by week</li>
                             <li>Make decisions and lead your team</li>
                             <li>Earn badges and keep a session journal</li> -->
-                        </ul>
+                    </ul>
                     </p>
                 </div>
                 <div class="card-footer">
@@ -147,21 +177,23 @@
                 <div>
                     <span class="card-tag">Career</span>
                     <h3 class="card-title">Professional Pivoting</h3>
-                    <p class="card-desc">Accelerated learning pathways to acquire high-impact skills required to change fields safely and cleanly.</p>
+                    <p class="card-desc">Accelerated learning pathways to acquire high-impact skills required to change
+                        fields safely and cleanly.</p>
                 </div>
                 <div class="card-footer">
                     <span><i class="fa-regular fa-clock mr-1"></i> 60-min sesje</span>
                     <span><i class="fa-regular fa-calendar mr-1"></i> Evenings Only</span>
                 </div>
             </div>
-            
+
             <div class="card-image" style="background-image: url('images/card-books.jpg');"></div>
 
             <div class="card-item">
                 <div>
                     <span class="card-tag">Efficiency</span>
                     <h3 class="card-title">Executive Skill-Up</h3>
-                    <p class="card-desc">Targeted micro-lessons on productivity tools, industry frameworks, and clear communications for corporate settings.</p>
+                    <p class="card-desc">Targeted micro-lessons on productivity tools, industry frameworks, and clear
+                        communications for corporate settings.</p>
                 </div>
                 <div class="card-footer">
                     <span><i class="fa-regular fa-clock mr-1"></i> 45-min sesje</span>
@@ -170,12 +202,13 @@
             </div>
 
             <div class="card-image" style="background-image: url('images/card-coffee.jpg');"></div>
-            
+
             <div class="card-item">
                 <div>
                     <span class="card-tag">Casual</span>
                     <h3 class="card-title">Lifelong Hobbyist</h3>
-                    <p class="card-desc">No pressure, no strict timelines. Revisit fundamental interests or discover new passions on a stress-free track.</p>
+                    <p class="card-desc">No pressure, no strict timelines. Revisit fundamental interests or discover new
+                        passions on a stress-free track.</p>
                 </div>
                 <div class="card-footer">
                     <span><i class="fa-regular fa-clock mr-1"></i> 90-min sesje</span>
@@ -198,22 +231,6 @@
             </div>
 
             <div class="pricing-grid">
-                <div class="price-card">
-                    <div>
-                        <h4 class="price-card-title">Indywydualnie</h4>
-                        <p class="price-card-sub">Idealne dla indywidualnych potrzeb i celów</p>
-                        <div class="price-amount-row">
-                            <span class="price-amount">75zł</span>
-                            <span class="price-unit">za lekcję</span>
-                        </div>
-                        <ul class="price-features">
-                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Indywidualne zajęcia z native speakerem</li>
-                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Zapraszamy na każdym poziomie angielskiego</li>
-                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Elastyczne godziny pracy</li>
-                        </ul>
-                    </div>
-                    <a href="#contact" class="btn-price">Skontaktuj się</a>
-                </div>
 
                 <div class="price-card">
                     <!-- <span class="price-badge">Most Popular</span> -->
@@ -227,7 +244,8 @@
                         <p class="price-note">Cena wynosi 41 zł za godzinę!</p>
                         <ul class="price-features">
                             <li><i class="fa-solid fa-check text-500 mr-2"></i> Tylko w trakcie roku szkolnego</li>
-                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Zróżnicowane zajęcia w każdym tygodniu</li>
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Zróżnicowane zajęcia w każdym tygodniu
+                            </li>
                             <li><i class="fa-solid fa-check text-500 mr-2"></i> Małe grupy: do 8 os.</li>
                         </ul>
                     </div>
@@ -236,8 +254,28 @@
 
                 <div class="price-card">
                     <div>
+                        <h4 class="price-card-title">Indywydualnie</h4>
+                        <p class="price-card-sub">Idealne dla indywidualnych potrzeb i celów</p>
+                        <div class="price-amount-row">
+                            <span class="price-amount">75zł</span>
+                            <span class="price-unit">za lekcję</span>
+                        </div>
+                        <ul class="price-features">
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Indywidualne zajęcia z native speakerem
+                            </li>
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Zapraszamy na każdym poziomie
+                                angielskiego</li>
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Elastyczne godziny pracy</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn-price">Skontaktuj się</a>
+                </div>
+
+                <div class="price-card">
+                    <div>
                         <h4 class="price-card-title">Seria Tematyczna</h4>
-                        <p class="price-card-sub">Świetna opcja do budowania umiejętności komunikacji dla młodzieży zainteresowanej grami</p>
+                        <p class="price-card-sub">Świetna opcja do budowania umiejętności komunikacji dla młodzieży
+                            zainteresowanej grami</p>
                         <div class="price-amount-row">
                             <span class="price-amount">700zł</span>
                             <span class="price-unit">za serię (8 sesji)</span>
@@ -271,8 +309,10 @@
                             <span class="price-unit">za lekcję</span>
                         </div>
                         <ul class="price-features">
-                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Indywidualne zajęcia z native speakerem</li>
-                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Zapraszamy na każdym poziomie angielskiego</li>
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Indywidualne zajęcia z native speakerem
+                            </li>
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Zapraszamy na każdym poziomie
+                                angielskiego</li>
                             <li><i class="fa-solid fa-check text-500 mr-2"></i> Elastyczne godziny pracy</li>
                         </ul>
                     </div>
@@ -364,12 +404,27 @@
             <div class="footer-regulations">
                 <a href="regulamin.html">Regulamin, prywatności i RODO</a> | <a href="pobieranie.html">Pobieranie</a>
             </div>
-            
+
         </div>
-        
+
     </footer>
 
     <script>
+
+        // var onscroll = function () {
+        //     clearTimeout($.data(this, 'scrollTimer'));
+
+        //     $('.site-logo, .ka-logo').hide(100);
+
+        //     $.data(this, 'scrollTimer', setTimeout(function () {
+        //         $('.site-logo, .ka-logo').show();
+        //     }, 500));
+
+        // }
+        // $(document).ready(function () {
+        //     $(window).on('scroll', onscroll)
+        // })
+
         function switchView(type) {
             document.body.setAttribute('data-theme', type);
             const teenSection = document.getElementById('teen-section');
@@ -384,7 +439,7 @@
                 adultSection.classList.add('hidden');
                 teenSectionPricing.classList.remove('hidden');
                 adultSectionPricing.classList.add('hidden')
-                
+
                 btnTeen.className = "btn-toggle btn-toggle-active";
                 btnAdult.className = "btn-toggle btn-toggle-inactive";
             } else {
@@ -392,24 +447,24 @@
                 teenSection.classList.add('hidden');
                 teenSectionPricing.classList.add('hidden');
                 adultSectionPricing.classList.remove('hidden')
-                
+
                 btnAdult.className = "btn-toggle btn-toggle-active";
                 btnTeen.className = "btn-toggle btn-toggle-inactive";
             }
         }
 
         var heroArray = [
-            "Mów pewnie", 
-            "Porozmawiaj z native speakerem", 
-            "Zrelaksowana atmosfera", 
-            "Ucz się, ćwicz, rozmawiaj, baw się!", 
+            "Mów pewnie",
+            "Porozmawiaj z native speakerem",
+            "Zrelaksowana atmosfera",
+            "Ucz się, ćwicz, rozmawiaj, baw się!",
             "Zapraszamy do Klubu Angielskiego"
         ];
         var heroSubArray = [
-            "Każda przygoda zaczyna się od rozmowy", 
-            "Posiadam doświadczenie i certyfikat uprawniający do nauczania języka angielskiego TEFL", 
+            "Każda przygoda zaczyna się od rozmowy",
+            "Posiadam doświadczenie i certyfikat uprawniający do nauczania języka angielskiego TEFL",
             "Żyj i myśl po angielsku-bez stresu",
-            "Wykonuj aktywności, graj w gry, rozmawiaj i ucz się angielskiego",  
+            "Wykonuj aktywności, graj w gry, rozmawiaj i ucz się angielskiego",
             "Czy jesteś gotowy podnieść poziom swojego angielskiego?"
         ]
         var i = 0;
@@ -421,22 +476,23 @@
             subHero.clearQueue();
             hero.fadeOut('fast');
             subHero.fadeOut('fast');
-            hero.queue(function() {
+            hero.queue(function () {
                 hero.text(heroArray[i]);
                 hero.fadeIn('slow');
                 hero.dequeue();
             });
-            subHero.queue(function() {
+            subHero.queue(function () {
                 subHero.text(heroSubArray[j]);
                 subHero.fadeIn('slow');
                 subHero.dequeue();
             })
             i++;
             j++;
-            if(i >= heroArray.length) {i = 0};
-            if(j >= heroSubArray.length) {j = 0};
+            if (i >= heroArray.length) { i = 0 };
+            if (j >= heroSubArray.length) { j = 0 };
         }, 6000);
-        
+
     </script>
 </body>
+
 </html>
