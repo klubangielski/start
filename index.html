@@ -21,9 +21,9 @@
                 <div class="site-logo-cursive"><a href="#">~ z Mattem ~</a></div>
             </div>
             <nav class="nav-menu">
-                <a href="#about" class="nav-link">O&nbsp;mnie</a>
-                <a href="#lessons" class="nav-link">Aktywności</a>
-                <a href="#pricing" class="nav-link">Cennik</a>
+                <a href="#about" class="nav-link" onclick="switchMainView('about'); return false">O&nbsp;mnie</a>
+                <a href="#lessons" class="nav-link" onclick="switchMainView('lessons'); return false">Aktywności</a>
+                <a href="#pricing" class="nav-link" onclick="switchMainView('pricing'); return false">Cennik</a>
                 <a href="#contact" class="nav-link">Kontakt</a>
             </nav>
         </div>
@@ -432,13 +432,25 @@
     </footer>
 
     <script>
+        function switchMainView(view) {
+                $('.main-content, .pricing-section').hide();
+                let a = "#".concat(view);
+                $(a).show();
+            };
+
+
         $(document).ready(function () {
             $('#back').hide();
 
 
-            function changeCardDisplay(i) {
+            // function changeCardDisplay(i) {
 
-            }
+            // }
+
+
+            $('.main-content, .pricing-section').hide();
+            $('#lessons').show();
+            
         })
         // var onscroll = function () {
         //     clearTimeout($.data(this, 'scrollTimer'));
