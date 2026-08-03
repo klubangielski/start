@@ -21,9 +21,10 @@
                 <div class="site-logo-cursive"><a href="#">~ z Mattem ~</a></div>
             </div>
             <nav class="nav-menu">
-                <a href="#about" class="nav-link" onclick="switchMainView('about'); return false">O&nbsp;mnie</a>
-                <a href="#lessons" class="nav-link" onclick="switchMainView('lessons'); return false">Aktywności</a>
-                <a href="#pricing" class="nav-link" onclick="switchMainView('pricing'); return false">Cennik</a>
+                <a href="#about" class="nav-link" onclick="switchMainView('about', this); return false">O&nbsp;mnie</a>
+                <a href="#lessons" class="nav-link selected"
+                    onclick="switchMainView('lessons', this); return false">Aktywności</a>
+                <a href="#pricing" class="nav-link" onclick="switchMainView('pricing', this); return false">Cennik</a>
                 <a href="#contact" class="nav-link">Kontakt</a>
             </nav>
         </div>
@@ -58,11 +59,17 @@
                 <div class="card-desc">
                     <p>Cześć! Jestem Matt. Jestem założycielem <i>'Klubu Angielskiego z&nbsp;Mattem'</i>.</p>
                     <!-- <p>Hi! I'm Matt. The founder of <i>'Klub Angielski z Mattem'</i>.</p> -->
-                    <p>Jednym z&nbsp;najlepszych sposobów nauki języka obcego jest używanie go w&nbsp;naturalny sposób, podczas codziennych czynności i&nbsp;prawdziwych sytuacji oraz czerpanie z&nbsp;tego przyjemności!</p>
+                    <p>Jednym z&nbsp;najlepszych sposobów nauki języka obcego jest używanie go w&nbsp;naturalny sposób,
+                        podczas codziennych czynności i&nbsp;prawdziwych sytuacji oraz czerpanie z&nbsp;tego
+                        przyjemności!</p>
                     <!-- <p>One of the best ways to learn English is to use it naturally, in real scenarios, everyday situations, and whilst enjoying the experience!</p> -->
-                    <p>Chciałem więc stworzyć przestrzeń, w&nbsp;której uczniowie będą mogli ćwiczyć mówienie, popełniać błędy, uczyć się na nich, budować pewność siebie i&nbsp;ostatecznie używać języka angielskiego do zyskania nowych znajomości, wyrażania idei i&nbsp;rozumienia otaczającego ich świata - wszystko w&nbsp;języku angielskim.</p>
+                    <p>Chciałem więc stworzyć przestrzeń, w&nbsp;której uczniowie będą mogli ćwiczyć mówienie, popełniać
+                        błędy, uczyć się na nich, budować pewność siebie i&nbsp;ostatecznie używać języka angielskiego
+                        do zyskania nowych znajomości, wyrażania idei i&nbsp;rozumienia otaczającego ich świata -
+                        wszystko w&nbsp;języku angielskim.</p>
                     <!-- <p>So I wanted to create a space where students can practice, make mistakes, learn from them, build confidence, and ultimately use English to make connections, express ideas, and understand the world around them, all in English.</p> -->
-                    <p>Choć zdawanie egzaminów może być celem samym w&nbsp;sobie, jeśli podróż do osiągnięcia celu jest przyjemna, o&nbsp;wiele łatwiej jest plan zrealizować!</p>
+                    <p>Choć zdawanie egzaminów może być celem samym w&nbsp;sobie, jeśli podróż do osiągnięcia celu jest
+                        przyjemna, o&nbsp;wiele łatwiej jest plan zrealizować!</p>
                     <!-- <p>Whilst passing exams might be the end destination, if the journey there is enjoyable, it makes it much easier to do!</p> -->
                 </div>
             </div>
@@ -72,9 +79,18 @@
             <div class="card-item">
                 <h3 class="card-title">Więcej o&nbsp;mnie!</h3>
                 <div class="card-desc">
-                    <p>Ukończyłem studia magisterskie na Uniwersytecie w&nbsp;Sheffield i&nbsp;studia licencjackie na Uniwersytecie w&nbsp;Birmingham w&nbsp;Wielkiej Brytanii.</p>
-                    <p>Swoją przygodę z&nbsp;nauczaniem języka angielskiego rozpocząłem po uzyskaniu certifikatu: <i>Teaching English As a Foreign Language</i> w&nbsp;2012 r., po uzyskaniu którego rozpocząłem nauczanie angielskiego poprzez udzielanie indywidualnych lekcji, jak również prowadziłem zajęcia z&nbsp;języka angielskiego w&nbsp;szkole.</p>
-                    <p>Poza tym moje zróżnicowane doświadczenie zawodowe obejmuje pracę przy wykopaliskach archeologicznych, opracowywanie dokumentów i&nbsp;szkolenie pracowników dla Ministerstwa. W&nbsp;wolnych chwilach zajmuję się tworzeniem gier i&nbsp;programowaniem-tę stronę też stworzyłem na potrzeby Klubu! Jestem zapalonym narciarzem i&nbsp;miłośnikiem górskich wycieczek.</p>
+                    <p>Ukończyłem studia magisterskie na Uniwersytecie w&nbsp;Sheffield i&nbsp;studia licencjackie na
+                        Uniwersytecie w&nbsp;Birmingham w&nbsp;Wielkiej Brytanii.</p>
+                    <p>Swoją przygodę z&nbsp;nauczaniem języka angielskiego rozpocząłem po uzyskaniu certifikatu:
+                        <i>Teaching English As a Foreign Language</i> w&nbsp;2012 r., po uzyskaniu którego rozpocząłem
+                        nauczanie angielskiego poprzez udzielanie indywidualnych lekcji, jak również prowadziłem zajęcia
+                        z&nbsp;języka angielskiego w&nbsp;szkole.
+                    </p>
+                    <p>Poza tym moje zróżnicowane doświadczenie zawodowe obejmuje pracę przy wykopaliskach
+                        archeologicznych, opracowywanie dokumentów i&nbsp;szkolenie pracowników dla Ministerstwa.
+                        W&nbsp;wolnych chwilach zajmuję się tworzeniem gier i&nbsp;programowaniem-tę stronę też
+                        stworzyłem na potrzeby Klubu! Jestem zapalonym narciarzem i&nbsp;miłośnikiem górskich wycieczek.
+                    </p>
 
                     <!-- <p class="card-int-detail" onclick="changeCardDisplay(1)">I was an archaeologist</p>
                     <p class="card-int-detail" onclick="changeCardDisplay(2)">I have teaching qualifications</p>
@@ -164,7 +180,8 @@
                     <span class="card-tag">Seria Tematyczna</span>
                     <h3 class="card-title">Interaktywne opowiadanie historii<!-- Interactive Storytellin --></h3>
                     <p class="card-desc">
-                        Wciągająca seria 8 sesji w&nbsp;języku angielskim, połączonych wspólną historią, w&nbsp;której TY
+                        Wciągająca seria 8 sesji w&nbsp;języku angielskim, połączonych wspólną historią, w&nbsp;której
+                        TY
                         decydujesz, co się wydarzy. Gra fabularna (RPG) zaprojektowana specjalnie po to, by zachęcać do
                         mówienia i słuchania, budowania i zapamiętywania słownictwa, kreatywnego myślenia, stosowania
                         wiedzy i wspólnej pracy nad komunikacją.
@@ -266,7 +283,8 @@
                         <p class="price-note">Cena wynosi 41 zł za godzinę!</p>
                         <ul class="price-features">
                             <li><i class="fa-solid fa-check text-500 mr-2"></i> Tylko w&nbsp;trakcie roku szkolnego</li>
-                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Zróżnicowane zajęcia w&nbsp;każdym tygodniu
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Zróżnicowane zajęcia w&nbsp;każdym
+                                tygodniu
                             </li>
                             <li><i class="fa-solid fa-check text-500 mr-2"></i> Małe grupy: do 8 os.</li>
                         </ul>
@@ -283,7 +301,8 @@
                             <span class="price-unit">za lekcję</span>
                         </div>
                         <ul class="price-features">
-                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Indywidualne zajęcia z&nbsp;native speakerem
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Indywidualne zajęcia z&nbsp;native
+                                speakerem
                             </li>
                             <li><i class="fa-solid fa-check text-500 mr-2"></i> Zapraszamy na każdym poziomie
                                 angielskiego</li>
@@ -331,7 +350,8 @@
                             <span class="price-unit">za lekcję</span>
                         </div>
                         <ul class="price-features">
-                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Indywidualne zajęcia z&nbsp;native speakerem
+                            <li><i class="fa-solid fa-check text-500 mr-2"></i> Indywidualne zajęcia z&nbsp;native
+                                speakerem
                             </li>
                             <li><i class="fa-solid fa-check text-500 mr-2"></i> Zapraszamy na każdym poziomie
                                 angielskiego</li>
@@ -432,39 +452,22 @@
     </footer>
 
     <script>
-        function switchMainView(view) {
-                $('.main-content, .pricing-section').hide();
-                let a = "#".concat(view);
-                $(a).show();
-            };
+        // FUNCTIONS
 
-
-        $(document).ready(function () {
-            $('#back').hide();
-
-
-            // function changeCardDisplay(i) {
-
-            // }
-
-
+        function switchMainView(view, link) {
             $('.main-content, .pricing-section').hide();
-            $('#lessons').show();
-            
-        })
-        // var onscroll = function () {
-        //     clearTimeout($.data(this, 'scrollTimer'));
-
-        //     $('.site-logo, .ka-logo').hide(100);
-
-        //     $.data(this, 'scrollTimer', setTimeout(function () {
-        //         $('.site-logo, .ka-logo').show();
-        //     }, 500));
-
-        // }
-        // $(document).ready(function () {
-        //     $(window).on('scroll', onscroll)
-        // })
+            let a = "#".concat(view);
+            if ($(a).height) {
+                $(a).show();
+                let offsetPx = 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+                let n = $(a).offset().top - offsetPx;
+                $([document.body, document.documentElement]).animate({
+                    scrollTop: n
+                }, 500);
+            }
+            $('.nav-link').removeClass('selected');
+            $(link).addClass('selected');
+        };
 
         function switchView(type) {
             document.body.setAttribute('data-theme', type);
@@ -494,44 +497,54 @@
             }
         }
 
-        var heroArray = [
-            "Mów pewnie",
-            "Porozmawiaj z native speakerem",
-            "Zrelaksowana atmosfera",
-            "Ucz się, ćwicz, rozmawiaj, baw się!",
-            "Zapraszamy do Klubu Angielskiego"
-        ];
-        var heroSubArray = [
-            "Każda przygoda zaczyna się od rozmowy",
-            "Posiadam doświadczenie i certyfikat uprawniający do nauczania języka angielskiego TEFL",
-            "Żyj i myśl po angielsku-bez stresu",
-            "Wykonuj aktywności, graj w gry, rozmawiaj i ucz się angielskiego",
-            "Czy jesteś gotowy podnieść poziom swojego angielskiego?"
-        ]
-        var i = 0;
-        var j = 0
-        const change = setInterval(() => {
-            var hero = $('#hero');
-            var subHero = $('#sub-hero');
-            hero.clearQueue();
-            subHero.clearQueue();
-            hero.fadeOut('fast');
-            subHero.fadeOut('fast');
-            hero.queue(function () {
-                hero.text(heroArray[i]);
-                hero.fadeIn('slow');
-                hero.dequeue();
-            });
-            subHero.queue(function () {
-                subHero.text(heroSubArray[j]);
-                subHero.fadeIn('slow');
-                subHero.dequeue();
-            })
-            i++;
-            j++;
-            if (i >= heroArray.length) { i = 0 };
-            if (j >= heroSubArray.length) { j = 0 };
-        }, 6000);
+
+        // ON DOCUMENT READY
+
+        $(document).ready(function () {
+            $('#back').hide();
+            $('.main-content, .pricing-section').hide();
+            $('#lessons').show();
+            var heroArray = [
+                "Mów pewnie",
+                "Porozmawiaj z native speakerem",
+                "Zrelaksowana atmosfera",
+                "Ucz się, ćwicz, rozmawiaj, baw się!",
+                "Zapraszamy do Klubu Angielskiego"
+            ];
+            var heroSubArray = [
+                "Każda przygoda zaczyna się od rozmowy",
+                "Posiadam doświadczenie i certyfikat uprawniający do nauczania języka angielskiego TEFL",
+                "Żyj i myśl po angielsku-bez stresu",
+                "Wykonuj aktywności, graj w gry, rozmawiaj i ucz się angielskiego",
+                "Czy jesteś gotowy podnieść poziom swojego angielskiego?"
+            ]
+            var i = 0;
+            var j = 0
+            const change = setInterval(() => {
+                var hero = $('#hero');
+                var subHero = $('#sub-hero');
+                hero.clearQueue();
+                subHero.clearQueue();
+                hero.fadeOut('fast');
+                subHero.fadeOut('fast');
+                hero.queue(function () {
+                    hero.text(heroArray[i]);
+                    hero.fadeIn('slow');
+                    hero.dequeue();
+                });
+                subHero.queue(function () {
+                    subHero.text(heroSubArray[j]);
+                    subHero.fadeIn('slow');
+                    subHero.dequeue();
+                })
+                i++;
+                j++;
+                if (i >= heroArray.length) { i = 0 };
+                if (j >= heroSubArray.length) { j = 0 };
+            }, 6000);
+
+            
+        })
 
     </script>
 </body>

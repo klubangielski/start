@@ -92,6 +92,11 @@ ul {
     display: none !important;
 }
 
+.selected {
+    border-top: 3px solid var(--accent);
+    font-weight: bolder;
+}
+
 .mr-1 {
     margin-right: 0.25rem;
 }
@@ -169,13 +174,16 @@ ul {
 
 .nav-link {
     color: var(--accent);
-    transition: color 0.15s ease-in-out;
+    padding: 3px;
+    /* transition: color 0.15s ease-in-out; */
 }
 
 .nav-link:hover {
-    text-shadow: 3px -3px 0px var(--text-secondary);
+    color: var(--text-primary);
+    background-color: var(--accent);
+    /* text-shadow: 3px -3px 0px var(--text-secondary);
     text-decoration: underline var(--accent);
-    translate: -5% 5%;
+    translate: -5% 5%; */
 }
 
 /* Hero / Parallax Background Section */
@@ -365,21 +373,6 @@ ul {
     background-color: var(--accent);
     color: var(--text-primary);
 }
-
-/* #card-int-back {
-    font-weight: bold;
-    padding: 1rem;
-    text-align: right;
-    border-radius: 9999px;
-    border: 1px solid var(--primary);
-    color: var(--accent);
-    background-color: var(--primary);
-}
-
-#card-int-back:hover {
-    background-color: var(--accent);
-    color: var(--text-primary);
-} */
 
 .card-footer {
     border-top: 1px solid var(--primary);
@@ -692,7 +685,7 @@ ul {
     }
 
     .footer-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -728,6 +721,10 @@ ul {
 
     .pricing-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
