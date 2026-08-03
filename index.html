@@ -159,10 +159,12 @@
                         <li>Praktyka i korekta</li>
                         <li>Wsparcie ukierunkowane na konkretny zakres tematyczny</li>
                         <li>Przygotowanie do egzaminów</li>
+                        <li>Lekcje dostępne także przez internet</li>
                         <!-- <li>Build confidence</li>
                             <li>Practice and correction</li>
                             <li>Targeted subject support</li>
-                            <li>Explore special interests</li> -->
+                            <li>Explore special interests</li>
+                            <li>Lessons also available online</li> -->
                     </ul>
                     </p>
                 </div>
@@ -460,6 +462,9 @@
             if ($(a).height) {
                 $(a).show();
                 let offsetPx = 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+                if (window.innerWidth < 640) {
+                    offsetPx = offsetPx*2;
+                }
                 let n = $(a).offset().top - offsetPx;
                 $([document.body, document.documentElement]).animate({
                     scrollTop: n
@@ -543,7 +548,7 @@
                 if (j >= heroSubArray.length) { j = 0 };
             }, 6000);
 
-            
+
         })
 
     </script>
