@@ -376,6 +376,7 @@ ul {
 
 .card-footer {
     border-top: 1px solid var(--primary);
+    margin-top: 1rem;
     padding-top: 1rem;
     display: flex;
     justify-content: space-between;
